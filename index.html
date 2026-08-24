@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SkyCheck</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>SkyCheck</h1>
+
+      <p class="subtitle">Check the current weather of any city</p>
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <p id="loading" class="loading">Loading...</p>
+
+      <p id="error" class="error"></p>
+
+      <section id="weatherCard" class="weather-card">
+        <h2 id="cityName">Mumbai, IN</h2>
+
+        <div class="weather-main">
+          <img
+            id="weatherIcon"
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            alt="Weather icon"
+          />
+
+          <div>
+            <p id="temperature">28°C</p>
+
+            <p id="condition">Clear</p>
+
+            <p id="description">clear sky</p>
+          </div>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail">
+            <span> Feels Like </span>
+
+            <strong id="feelsLike"> 30°C </strong>
+          </div>
+
+          <div class="detail">
+            <span> Humidity </span>
+
+            <strong id="humidity"> 70% </strong>
+          </div>
+
+          <div class="detail">
+            <span> Wind </span>
+
+            <strong id="wind"> 5 m/s </strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
